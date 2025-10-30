@@ -17,6 +17,9 @@ import {
 } from "@/components/ui/card";
 import { useMemo, useState } from "react";
 
+
+import Reveal from '@/components/animations/reveal'
+
 export default function DatosSection() {
   const raw = [
     { year: 2005, plasticMt: 6.0, projected: false },
@@ -137,7 +140,7 @@ export default function DatosSection() {
       </Card>
 
       {/* Datos destacados */}
-      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+      <Reveal className="mt-10 grid gap-4 sm:grid-cols-3">
         <Stat
           title="≈80% desde tierra"
           desc="Fuente principal de contaminación marina."
@@ -150,7 +153,7 @@ export default function DatosSection() {
           title="Microplásticos en humanos"
           desc="Hallados en sangre y placentas (evidencia emergente)."
         />
-      </div>
+      </Reveal>
     </section>
   );
 }

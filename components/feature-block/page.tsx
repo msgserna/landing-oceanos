@@ -12,7 +12,7 @@ export default function FeatureBlockOcean() {
           src="/images/fondo.png"
           alt="Desembocadura limpia, vegetación y agua clara"
           fill
-          className="hidden object-cover dark:block"
+          className="object-cover"
           sizes="(min-width: 768px) 50vw, 100vw"
           priority
         />

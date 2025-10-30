@@ -3,7 +3,7 @@
 
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-
+import Reveal from "@/components/animations/reveal"
 
 /* ------------------------------ FUENTES ------------------------------ */
 export default function FuentesSection() {
@@ -38,7 +38,7 @@ export default function FuentesSection() {
         infraestructura y hábitos.
       </p>
 
-      <div className="mt-8 grid gap-4 md:grid-cols-2">
+      <Reveal className="mt-8 grid gap-4 md:grid-cols-2">
         {items.map((it) => (
           <Card key={it.title}>
             <CardHeader>
@@ -49,7 +49,7 @@ export default function FuentesSection() {
             </CardContent>
           </Card>
         ))}
-      </div>
+      </Reveal>
     </section>
   )
 }

@@ -2,6 +2,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import Reveal from "@/components/animations/reveal"
 
 /* ------------------------------ SOLUCIONES ------------------------------ */
 export default function SolucionesSection() {
@@ -14,7 +15,7 @@ export default function SolucionesSection() {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <Reveal className="grid gap-6 md:grid-cols-3">
         <Card>
           <CardHeader>
             <CardTitle>Política & Sistemas</CardTitle>
@@ -61,7 +62,7 @@ export default function SolucionesSection() {
             </div>
           </CardContent>
         </Card>
-      </div>
+      </Reveal>
     </section>
   )
 }

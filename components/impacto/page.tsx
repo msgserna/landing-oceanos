@@ -2,7 +2,7 @@
 
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-
+import Reveal from "@/components/animations/reveal"
 
 
 function ImpactCard({ title, bullets }: { title: string; bullets: string[] }) {
@@ -30,7 +30,7 @@ export default function ImpactosSection() {
         Naturaleza, economía y salud humana ya muestran señales del impacto. Aplicar el principio de precaución es clave.
       </p>
 
-      <div className="mt-8 grid gap-6 md:grid-cols-3">
+      <Reveal className="mt-8 grid gap-6 md:grid-cols-3">
         <ImpactCard
           title="Ecosistemas"
           bullets={[
@@ -55,7 +55,7 @@ export default function ImpactosSection() {
             "Recomendación: reducir exposición y vertidos.",
           ]}
         />
-      </div>
+      </Reveal>
     </section>
   )
 }
