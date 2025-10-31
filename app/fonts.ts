@@ -1,13 +1,7 @@
-// app/fonts.ts
-import { Inter, Space_Grotesk } from 'next/font/google'
+import LocalFont from "next/font/local";
 
-export const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-body',
-  display: 'swap',      // opcional
-})
-
-export const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-display',
-})
+export const fontHeading = LocalFont({
+  src: "../public/fonts/PlusJakartaSans-VariableFont_wght.ttf",
+  variable: "--font-heading",
+  display: "swap",
+});

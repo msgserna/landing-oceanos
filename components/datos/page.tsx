@@ -70,7 +70,7 @@ export default function DatosSection() {
   return (
     <section id="datos" className="mx-auto max-w-6xl px-6 py-24">
       <div className="mb-6">
-        <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h2 className="fontHeading text-3xl font-semibold tracking-tight sm:text-4xl">
           El problema en cifras
         </h2>
         <p className="mt-2 max-w-5xl text-foreground/90">

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -115,6 +116,8 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+
+
   }
   body {
     @apply bg-background text-foreground;
@@ -122,5 +125,12 @@
 }
 
 h2 {
-  @apply text-primary;
+  @apply text-primary; /* usa la variable de color 'primary' definida por shadcn */
 }
+
+
+  .fontHeading {
+    font-family: var(--font-heading);
+    font-feature-settings: "liga", "clig", "kerning";
+    letter-spacing: -0.02em;
+  }
