@@ -17,7 +17,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden gap-6 md:flex">
-          <a href="#datos" className="text-sm text-foreground/80 hover:text-foreground">Datos</a>
+          <a href="#datos" className="text-sm hover:cyan-500 text-foreground/80 hover:text-foreground">Datos</a>
           <a href="#fuentes" className="text-sm text-foreground/80 hover:text-foreground">Fuentes</a>
           <a href="#impactos" className="text-sm text-foreground/80 hover:text-foreground">Impactos</a>
           <a href="#soluciones" className="text-sm text-foreground/80 hover:text-foreground">Soluciones</a>
